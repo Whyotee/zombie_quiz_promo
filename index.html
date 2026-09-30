@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Synchrotron | Try to Survive</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '1121798');
+    </script>
+    <!-- End MailerLite Universal -->
+
+</head>
+<body>
+    <header class="header hidden">     
+
+       
+
+        <div class="results 09 hidden">
+            <p class="results_text">You've died, clearly.</p>                
+        </div>
+
+        <div class="results 010 hidden">
+            <p class="results_text">You've died - the half-cooked drugs are the best bet for an inevitable death.</p>                
+        </div>
+       
+        <div class="results 1 hidden">
+            <p class="results_text">
+                You lucky bastard! You've made it out like Stallone and found a cure for the virus! The humanity will name it after you!
+            </p>                
+        </div>
+
+        <div class="results 2 hidden">
+            <p class="results_text">
+                You are a professional survivor! You have food, strength, passion and friends to keep you company through this end of the world… until someone else finds a cure and saves humanity! Maybe, you could try again, and be the saviour this time? 
+            </p>
+        </div>
+
+        <div class="results 3 hidden">
+            <p class="results_text">
+                You had enough food to go for ages. You've got the knack of fighting monsters. You are the ultimate survivor! But what's the point when all hope is gone? Dead by suicide.
+            </p>
+        </div>       
+
+        <div class="results 4 hidden">
+            <p class="results_text">
+                 You fought brave, but fate was not on your side. You ran out of food, and hunger - the bastard - didn't leave you a chance. See you next life!
+            </p>
+        </div>   
+
+        <div class="results 5 hidden">
+            <p class="results_text">
+                 Died eaten by zombies.
+            </p>
+        </div>   
+
+        <div class="final-buttons">
+            <button class="btn btn-again">Go again!</button>
+            <button class="btn btn-look">Look here</button>
+        </div>
+
+       
+
+        <div class="share-buttons hidden">
+            <button class="btn btn-share-facebook"><i class="fab fa-facebook-f"></i></button>
+            <button class="btn btn-share-twitter"><i class="fab fa-x-twitter"></i></button>
+            <button class="btn btn-share-reddit"><i class="fab fa-reddit-alien"></i></button>
+            <button class="btn btn-share-linkedin"><i class="fab fa-linkedin-in"></i></button>
+        </div>
+
+        <div class="credits hidden">
+            <p>Created by <strong>Whyotee</strong></p>
+            <p>
+                <a href="https://t.me/Whyotee" target="_blank">Telegram</a> | 
+                <a href="mailto:whyotee@gmail.com">Email</a>
+            </p>
+        </div> 
+            
+       
+        
+    </header>
+
+    <main class="quiz">    
+        <div class="modal hidden"> 
+            <p class="modal_text hidden box-1 boxes">Your box is full of dried noodles. Two weeks of food worth!</p>
+            <p class="modal_text hidden box-2 boxes">Your box is full of bottles of wine.</p>
+
+            <p class="modal_text hidden box-1a boxes">Your box is empty.</p>
+            <p class="modal_text hidden box-2a boxes">Your box is full to the top with chocolate bars and energy drinks.</p>
+            <p class="modal_text hidden box-3a boxes">Your box has drills.</p>
+            <p class="modal_text hidden box-4a boxes">Your box has drugs, including antibiotics and bandages.</p>   
+
+
+
+            <p class="modal_text hidden choose-two">You have to choose 2 items.</p>                
+            <button class="btn btn-close">&#x2716;</button>           
+        </div>
+
+        <div class="overlay hidden"></div>  
+
+        <div class="overlay cta hidden">
+            <div class="ml-embedded" data-form="bwKRvU"></div>
+
+            <a href="https://amzn.eu/d/5LVr0hM" class="btn" target="_blank">Check out the book!</a>
+
+            <a href="#back-to" class="btn btn-back">Go back</a>
+
+        </div>
+        
+        
+
+        <div class="slider">
+
+            
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">Hello, fellow survivor! Let's get introduced. What unlucky fate has brought you here today? At the Synchrotron, you are: </h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">                        
+                           
+                            
+                            <div class="question_option" food="6" fight="1" mood="0" cure="7" outcome="true">
+                                <input type="radio" id="General Biology" name="question-1" class="input">
+                                <label class="link" for="General Biology">
+                                    <span class="form-button"></span>
+                                    Scientist - General Biology
+                                </label>
+                            </div>
+                            
+                            <div class="question_option" food="4" fight="4" mood="0" cure="8" outcome="true">
+                                <input type="radio" id="Material Science" name="question-1" class="input">
+                                <label class="link" for="Material Science">
+                                    <span class="form-button"></span>
+                                    Scientist - Material Science
+                                </label>
+                            </div>
+                           
+                            <div class="question_option" food="9" fight="9" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Cleaner" name="question-1" class="input">
+                                <label class="link" for="Cleaner">
+                                    <span class="form-button"></span>
+                                    Cleaner
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="8" fight="9" mood="0" cure="5" outcome="true">
+                                <input type="radio" id="Beamline" name="question-1" class="input">
+                                <label class="link" for="Beamline">
+                                    <span class="form-button"></span>
+                                    Beamline Engineer
+                                </label>
+                            </div>                           
+                    
+                            <div class="question_option" food="2" fight="2" mood="5" cure="0" outcome="true">
+                                <input type="radio" id="Communications" name="question-1" class="input">
+                                <label class="link" for="Communications">
+                                    <span class="form-button"></span>
+                                    HR
+                                </label>
+                            </div>
+
+                           
+                        </form>
+                    </div>
+                </div>                
+            </div> 
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">Your food supplies are running dry, so it's time to go out of your comfy beamline bunker and look for food. But first - a weapon! Pick one: </h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">
+
+                            <div class="question_option" food="6" fight="10" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Axe" name="question-2" class="input">
+                                <label class="link" for="Axe">
+                                    <span class="form-button"></span>
+                                    Emergency axe
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="3" fight="8" mood="0" cure="1" outcome="true">
+                                <input type="radio" id="Wrench" name="question-2" class="input">
+                                <label class="link" for="Wrench">
+                                    <span class="form-button"></span>
+                                    A lab wrench
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="3" fight="7" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Fire" name="question-2" class="input">
+                                <label class="link" for="Fire">
+                                    <span class="form-button"></span>
+                                    A fire extinguisher
+                                </label>
+                            </div>             
+
+
+                            <div class="question_option" food="3" fight="1" mood="4" cure="0" outcome="true">
+                                <input type="radio" id="Sarcasm" name="question-2" class="input">
+                                <label class="link" for="Sarcasm">
+                                    <span class="form-button"></span>
+                                    My wit and sarcasm
+                                </label>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>                
+            </div> 
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">With Odin's help and a lot of courage, you've finally got out of your hiding place. Where would you drop in first?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">
+
+                            <div class="question_option" food="0" fight="8" mood="4" cure="0" outcome="true">
+                                <input type="radio" id="Toilet" name="question-3" class="input">
+                                <label class="link" for="Toilet">
+                                    <span class="form-button"></span>
+                                    Toilet
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="2" fight="8" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="Closet" name="question-3" class="input">
+                                <label class="link" for="Closet">
+                                    <span class="form-button"></span>
+                                    Cleaner's closet
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="9" fight="5" mood="5" cure="3" outcome="true">
+                                <input type="radio" id="The Health and Safety office" name="question-3" class="input">
+                                <label class="link" for="The Health and Safety office">
+                                    <span class="form-button"></span>
+                                    The Health and Safety office
+                                </label>
+                            </div>                          
+
+                            <div class="question_option" food="0" fight="9" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Basement" name="question-3" class="input">
+                                <label class="link" for="Basement">
+                                    <span class="form-button"></span>
+                                    Basement
+                                </label>
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">
+                        You're in luck! The staff kitchen in front of you should have lots of food! A pack of monsters charges from around the corner. 
+                    </h3>               
+                   
+
+                    <div class="question_card-options">                        
+
+                        <form action="#" class="form add-margin-top-big">                             
+                            
+
+                            <div class="question_option" food="10" fight="0" mood="10" cure="0" outcome="true">
+                                <input type="radio" id="Box-1" name="question-food" class="input">
+                                <label class="link" for="Box-1" title="box-1">
+                                    <span class="form-button"></span>
+                                    Box 1 (contents unknown)
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="1" fight="0" mood="10" cure="0" outcome="true">
+                                <input type="radio" id="Box-2" name="question-food" class="input">
+                                <label class="link" for="Box-2" title="box-2">
+                                    <span class="form-button"></span>
+                                    Box 2 (contents unknown)
+                                </label>   
+                            </div>                           
+
+                            <div class="question_option" food="1" fight="0" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="A Snickers bar" name="question-food" class="input">
+                                <label class="link" for="A Snickers bar">
+                                    <span class="form-button"></span>
+                                    A Snickers bar
+                                </label>
+                            </div>                    
+ 
+                            <div class="question_option" food="1" fight="0" mood="3" cure="0" outcome="true">
+                                <input type="radio" id="A bottle of beer" name="question-food" class="input">
+                                <label class="link" for="A bottle of beer">
+                                    <span class="form-button"></span>
+                                    A bottle of beer
+                                </label>
+                            </div>    
+
+                        </form>                       
+                        
+                    </div>                    
+                </div>    
+             
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">Okay, the folks that picked their wit and charisma as weapons didn't survive. And what do you think will help you make it out alive? </h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">                          
+
+                            <div class="question_option" food="0" fight="2" mood="8" cure="0" outcome="true">
+                                <input type="radio" id="Stress resistance" name="question-5" class="input">
+                                <label class="link" for="Stress resistance">
+                                    <span class="form-button"></span>
+                                    Stress resistance
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="9" fight="0" mood="1" cure="5" outcome="true">
+                                <input type="radio" id="Resourcefulness" name="question-5" class="input">
+                                <label class="link" for="Resourcefulness">
+                                    <span class="form-button"></span>
+                                    Resourcefulness
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="9" mood="2" cure="1" outcome="true">
+                                <input type="radio" id="Fast thinking" name="question-5" class="input">
+                                <label class="link" for="Fast thinking">
+                                    <span class="form-button"></span>
+                                    Fast thinking
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="9" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="Physical Fitness" name="question-5" class="input">
+                                <label class="link" for="Physical Fitness">
+                                    <span class="form-button"></span>
+                                    Physical Fitness
+                                </label>
+                            </div>                                    
+
+                        </form>                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">The monsters have surrounded you in the lab. There is nowhere to run so you have to act quick and save your poor arse. You will: </h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">
+
+                            <div class="question_option" food="5" fight="2" mood="3" cure="0" outcome="true">
+                                <input type="radio" id="Explosive" name="question-6" class="input">
+                                <label class="link" for="Explosive">
+                                    <span class="form-button"></span>
+                                    Make an explosive and blow them all to hell
+                                </label>
+                            </div>
+
+
+                            <div class="question_option" food="5" fight="3" mood="3" cure="0" outcome="true">
+                                <input type="radio" id="Fight" name="question-6" class="input">
+                                <label class="link" for="Fight">
+                                    <span class="form-button"></span>
+                                    Go Rambo on them with my bare hands
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="1" fight="5" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Sit and wait" name="question-6" class="input">
+                                <label class="link" for="Sit and wait">
+                                    <span class="form-button"></span>
+                                    Sit and wait
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="5" fight="0" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="Jump" name="question-6" class="input">
+                                <label class="link" for="Jump">
+                                    <span class="form-button"></span>
+                                    I'll jump out of the window and pray that I'll make it
+                                </label>
+                            </div>           
+                        </form>                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">You've made to the restaurant kitchen with enough food to last you a lifetime. Time to chill! But wait… Someone's knocking at the door pleading to let them in.</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-small">
+
+                            <div class="question_option" food="3" fight="7" mood="10" cure="15" outcome="true">
+                                <input type="radio" id="Let in" name="question-7" class="input">
+                                <label class="link" for="Let in">
+                                    <span class="form-button"></span>
+                                    I let them in. It's more fun with a friend.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="10" fight="10" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="No way" name="question-7" class="input">
+                                <label class="link" for="No way">
+                                    <span class="form-button"></span>
+                                    No way. I stay silent and pretend no one is inside.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="8" fight="2" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="Move on" name="question-7" class="input">
+                                <label class="link" for="Move on">
+                                    <span class="form-button"></span>
+                                    I tell them to move on, but leave a small package of food and water outside later—just in case.
+                                </label>
+                            </div>                         
+
+                            <div class="question_option" food="7" fight="2" mood="2" cure="0" outcome="true">
+                                <input type="radio" id="No share" name="question-7" class="input">
+                                <label class="link" for="No share">
+                                    <span class="form-button"></span>
+                                    I let them in but don't share any food.
+                                </label>
+                            </div>                         
+       
+                        </form>                        
+                    </div>
+
+
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">You made a friend on your survival journey. Life is not so grim anymore. But it looks like your friend has been bitten, and they don't even know. How do you break it to them? Or maybe not?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-small">
+
+                            <div class="question_option" food="0" fight="9" mood="0" cure="0" outcome="true">
+                                <input type="radio" id="Kill now" name="question-8" class="input">
+                                <label class="link killed" for="Kill now">
+                                    <span class="form-button"></span>
+                                    I'll kill them immediately, no need to wait for them to turn.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="7" mood="4" cure="0" outcome="true">
+                                <input type="radio" id="Kill later" name="question-8" class="input">
+                                <label class="link" for="Kill later">
+                                    <span class="form-button"></span>
+                                    I'll tell them they are going to turn, and kill them at the first signs of turning.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="2" mood="5" cure="0" outcome="true">
+                                <input type="radio" id="Ignore" name="question-8" class="input">
+                                <label class="link" for="Ignore">
+                                    <span class="form-button"></span>
+                                    I'll ignore the signs - that's just paranoia!
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="2" mood="2" cure="6" outcome="true">
+                                <input type="radio" id="Tie up" name="question-8" class="input">
+                                <label class="link" for="Tie up">
+                                    <span class="form-button"></span>
+                                    I won't kill them but will tie them up and watch them.
+                                </label>
+                            </div>                 
+                        </form>                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slide skip-question">
+                <div class="question_card">
+                    <h3 class="question_card-title">It's final! Your best friend has turned into a monster, and you've locked them in the lab next door. What the hell next?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">
+
+                            <div class="question_option" food="0" fight="2" mood="1" cure="2" outcome="true">
+                                <input type="radio" id="Keep" name="question-9" class="input">
+                                <label class="link" for="Keep">
+                                    <span class="form-button"></span>
+                                    Keep them there until I find a cure. Don't feed them. Don't have any spare spleen anyway.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="6" mood="3" cure="0" outcome="true">
+                                <input type="radio" id="Kill them" name="question-9" class="input">
+                                <label class="link" for="Kill them">
+                                    <span class="form-button"></span>
+                                    Kill them. It's done.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="3" mood="1" cure="15" outcome="true">
+                                <input type="radio" id="Experiment" name="question-9" class="input">
+                                <label class="link" for="Experiment">
+                                    <span class="form-button"></span>
+                                    Kill them and use the dead body for experiment.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="8" mood="6" cure="0" outcome="true">
+                                <input type="radio" id="Experiment" name="question-9" class="input">
+                                <label class="link" for="Experiment">
+                                    <span class="form-button"></span>
+                                    Let them go and hope they won't be back to eat me.
+                                </label>
+                            </div>                        
+                 
+                        </form>                        
+                    </div>
+
+
+                    
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">It's that time again! We've run out of food. This time you find yourself in the cafe supply room. It has been ravaged and seems empty at first glance. You can only open two boxes. </h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big" autocomplete="off">
+
+                            <div class="question_option" food="0" fight="0" mood="0" cure="0" outcome="true">
+                                <input type="checkbox" id="Box-1a" class="input">
+                                <label class="link-a" for="Box-1a" title="box-1a">
+                                    <span class="form-button"></span>
+                                    Box 1
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="10" fight="0" mood="2" cure="0" outcome="true">
+                                <input type="checkbox" id="Box-2a" class="input">
+                                <label class="link-a" for="Box-2a" title="box-2a">
+                                    <span class="form-button"></span>
+                                    Box 2
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="0" mood="0" cure="0" outcome="true">
+                                <input type="checkbox" id="Box-3a" class="input">
+                                <label class="link-a" for="Box-3a" title="box-3a">
+                                    <span class="form-button"></span>
+                                    Box 3
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="10" mood="2" cure="0" outcome="true">
+                                <input type="checkbox" id="Box-4a" class="input">
+                                <label class="link-a" for="Box-4a" title="box-4a">
+                                    <span class="form-button"></span>
+                                    Box 4
+                                </label>
+
+                                
+                            </div>
+                            
+                            <button class="btn btn-next">NEXT</button>
+                           
+                            
+                        </form>
+
+                        
+                        
+                    </div>
+                    
+                </div>
+
+                
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">In times of crisis people are willing to do whatever it takes to beat death. What is the ultimate thing you'd do for survival?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-big">
+
+                            <div class="question_option" food="10" fight="0" mood="1" cure="0" outcome="true">
+                                <input type="radio" id="Eat another human" name="question-11" class="input">
+                                <label class="link" for="Eat another human">
+                                    <span class="form-button"></span>
+                                    Eat another human - dead or alive, no matter how hungry I am.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="5" fight="1" mood="3" cure="0" outcome="true">
+                                <input type="radio" id="Eat rats" name="question-11" class="input">
+                                <label class="link" for="Eat rats">
+                                    <span class="form-button"></span>
+                                    Kill and eat rats, cocroaches.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="3" mood="4" cure="0" outcome="true">
+                                <input type="radio" id="Drink toilet" name="question-11" class="input">
+                                <label class="link" for="Drink toilet">
+                                    <span class="form-button"></span>
+                                    Drink from a dirty toilet.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="6" mood="8" cure="0" outcome="true">
+                                <input type="radio" id="Sleep pile" name="question-11" class="input">
+                                <label class="link" for="Sleep pile">
+                                    <span class="form-button"></span>
+                                    Sleep in a pile of corpses for camouflage.
+                                </label>
+                            </div>                       
+                 
+                        </form>                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slide big-slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">You've managed to develop a cure against the virus. But as it always happens, the first promising drug is only by injection. This significantly limits your ability to cure people quickly. How do you decide who you will inject first?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-small">
+
+                            <div class="question_option" food="0" fight="3" mood="7" cure="2" outcome="true">
+                                <input type="radio" id="People I like" name="question-12" class="input">
+                                <label class="link" for="People I like">
+                                    <span class="form-button"></span>
+                                    At first, I'll treat the people I like/know.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="3" mood="3" cure="9" outcome="true">
+                                <input type="radio" id="Whoever" name="question-12" class="input">
+                                <label class="link" for="Whoever">
+                                    <span class="form-button"></span>
+                                    Whoever I can grab. The monsters are still trying to eat me.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="3" mood="3" cure="7" outcome="true">
+                                <input type="radio" id="Merit" name="question-12" class="input">
+                                <label class="link" for="Merit">
+                                    <span class="form-button"></span>
+                                    I decide on merit and usefullness.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="0" mood="0" cure="2" outcome="true">
+                                <input type="radio" id="Nobody" name="question-12" class="input">
+                                <label class="link" for="Nobody">
+                                    <span class="form-button"></span>
+                                    I won't treat anyone. Nobody deserves it.
+                                </label>
+                            </div> 
+                 
+                        </form>                        
+                    </div>
+
+
+                    
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="question_card">
+                    <h3 class="question_card-title">Bugger! You've been bitten by a monster and will be a monster soon yourself. This is the end, isn't it?</h3>
+                    <div class="question_card-options">
+                        <form action="#" class="form add-margin-top-small">
+
+                            <div class="question_option" food="0" fight="4" mood="5" cure="10" outcome="true">
+                                <input type="radio" id="Let it be" name="question-13" class="input">
+                                <label class="link" for="Let it be">
+                                    <span class="form-button"></span>
+                                    Let it be. My friends will find the cure against the virus without me and then, they will cure me.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="0" mood="0" cure="0" outcome="" res="09">
+                                <input type="radio" id="Light up" name="question-13" class="input">
+                                <label class="link" for="Light up">
+                                    <span class="form-button"></span>
+                                    I'll light myself up and run into the crowd of monsters. A dazzling end!
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="0" mood="0" cure="10" outcome="" res="010">
+                                <input type="radio" id="Save myself" name="question-13" class="input">
+                                <label class="link" for="Save myself">
+                                    <span class="form-button"></span>
+                                    The cure against the virus is ALMOST there. I will use what I have to SAVE MYSELF.
+                                </label>
+                            </div>
+
+                            <div class="question_option" food="0" fight="6" mood="10" cure="0" outcome="true">
+                                <input type="radio" id="Monster" name="question-13" class="input">
+                                <label class="link" for="Monster">
+                                    <span class="form-button"></span>
+                                    It's been long coming. I'll make an awesome monster.
+                                </label>
+                            </div>           
+           
+                        </form>                        
+                    </div>                    
+                </div>
+            </div>       
+
+            <div class="slide">
+                <button class="btn btn-finish">Finish</button>  
+            </div>            
+
+            
+        </div>
+
+
+        <div class="dots"></div>           
+
+
+    </main>
+
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
